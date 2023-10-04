@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Super Shine</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pixelify+Sans:wght@400;600&family=Ubuntu&display=swap" rel="stylesheet">    
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/eee8117b7a.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <style>
+        /*TITLE SECTION*/
+        .navbar{
+            padding: 0 0 4rem;
+        }
+        .rowuno{
+            padding: 0 1% 0;
+        }
+        .navbar-brand{
+            font-size: 2.5rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+        }
+        .linknav{
+            font-family: 'Pixelify Sans', cursive;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        #title{
+            padding: 3% 15% 5%;
+        }
+        .nav-item{
+            padding: 0 15px;
+        }
+        .bunny-cont{
+            padding-left: 20%;
+        }
+        .bunny{
+            height: 1000px;
+            margin-top: -230px;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        .slogan{
+            font-size: 3.5rem;
+            line-height: 1.5;
+        }
+        .download-button{
+            font-family: 'Pixelify Sans', cursive;
+            font-weight: 600;
+            margin: 5% 3% 0% 0%;
+        }
+        .download-icon{
+            margin-right: 8px;
+        }
+        .col-lg-6{
+            padding: 0 0 0;
+        }
+        .tagline{
+            font-size: 2.4rem;
+            margin-top: -10px;
+            line-height: 1;
+            color: #6970A7;
+        }
+        /*FEATURES SECTION*/
+        #features{
+            padding: 7% 14%;
+            background-color: #6970A7;
+            margin-top: -350px;
+            z-index: 1;
+            color: whitesmoke;
+        }
+        .feature-titles{
+            font-family: 'Pixelify Sans', cursive;
+            font-weight: 600;
+        }
+        .col-lg-4{
+            text-align: center;
+            padding: 0 5%;
+        }
+        .fa-icon{
+            margin: 1rem;   
+        }
+        .fa-icon:hover{
+            color: #ccc;;
+        }
+
+        /*GUESTS*/
+        #guests{
+            text-align: center;
+            padding: 6% 0;
+        }
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236970A7' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        }
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236970A7' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        }
+        .ambassadors{
+            border-radius: 50%;
+            height: 300px;
+        }
+        .guest-title{
+            margin-bottom: 4rem;
+        }
+        .guest-name{
+            margin-top: 2rem;
+        }
+
+        /*CTA*/
+        #cta{
+            background-color: #6970A7;
+            padding: 6% 14%;
+            text-align: center;
+        }
+        .cta-title{
+            font-size: 2rem;
+            font-weight: 600;
+            color: white;
+        }
+        .cta-title-span{
+            font-family: 'Pixelify Sans', cursive;
+        }
+
+        /*Footer*/
+        #footer{
+            padding: 6% 14%;
+            text-align: center;
+        }
+        .fa-footer{
+            color:#6970A7;
+            padding: 20px 10px;
+        }
+        
+        /*Media Break Points*/
+        @media (max-width: 1024px) {
+            .bunny{
+                height: 850px;
+                margin-top: -170px;
+            }
+            #features{
+                margin-top: -285px;
+            }
+        }
+        @media (max-width: 768px){
+            .bunny{
+                height: 800px;
+                margin-top: -100px;
+            }
+            #features{
+                margin-top: -257px;
+            }
+        }
+        @media (max-width: 426px) {
+            .navbar-brand{
+                font-size: 2rem;
+            }
+            .bunny{
+                height: 500px;
+            }
+            #title{
+                padding: 3% 9% 5%;
+            }
+            .slogan{
+                font-size: 2rem;
+            }
+            .tagline{
+                font-size: 1.8rem;
+            }
+            .navbar{
+                padding: 0 0 3rem;
+            }
+            .linknav{
+                font-size: 1.2rem;
+            }
+            .ambassadors{
+                height: 200px;
+            }
+            .guest-title{
+                margin-bottom: 2rem;
+            }
+            .cta-title{
+                font-size: 1.5rem;
+            }
+            .bunny{
+                margin-top: -50px;
+            }
+            #features{
+                margin-top: -157px;
+            }
+        }
+        @media (max-width: 376px){
+            .button-carousel-top{
+                margin-left: -.2px;
+            }    
+            #features{
+                margin-top: -155px;
+            }
+            .ambassadors{
+                height: 150px;
+            }
+        }
+        @media (max-width: 321px){
+            .button-carousel-top{
+                margin-left: 53px;
+            }
+            .navbar-brand{
+                font-size: 1.8rem;
+            }
+            .navbar{
+                margin: 0 -10px;
+            }
+            .bunny{
+                height: 400px;
+            }
+            #title{
+                padding: 3% 12% 5%;
+            }
+            .slogan{
+                font-size: 1.8rem;
+            }
+            .tagline{
+                font-size: 1.5rem;
+            }
+            .navbar{
+                padding: 0 0 1.5rem;
+            }
+            .linknav{
+                font-size: 1.2rem;
+            }
+            .ambassadors{
+                height: 150px;
+            }
+            .guest-title{
+                margin-bottom: 1.8rem;
+            }
+            .cta-title{
+                font-size: 1.5rem;
+            }
+            .bunny{
+                margin-top: -50px;
+            }
+            #features{
+                margin-top: -125px;
+            }
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                margin-top: -60px;
+            }
+            .guest-name{
+                font-size: 1.2rem;
+            }
+            #footer{
+                font-size: .9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--TITLE SECTION-->
+    <section id="title">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="" class="navbar-brand">Super Shine</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link linknav">
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#guests" class="nav-link linknav">
+                            Ambassadors
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cta" class="nav-link linknav">
+                            Download
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row rowuno">
+            <div class="col-lg-6">
+                <div>
+                    <h1 class="slogan">Step into the new era of car care! <br><span class="tagline"><i>So fresh. So clean.</i></span></h1>
+                    <button class="download-button btn btn-outline-dark btn-lg button-carousel-top" type="button"><i class="fa-brands fa-apple download-icon"></i>Download</button>
+                    <button class="download-button btn btn-outline-dark btn-lg button-carousel-top" type="button"><i class="fa-brands fa-google-play download-icon"></i>Download</button>
+                </div>                
+            </div>
+            <div class="col-lg-6 bunny-cont-cont">
+                <div class="bunny-cont">
+                    <img src="newjeansbunny2.png" class="bunny">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--FEATURE SECTION-->
+    <section id="features">
+        <div class="row">
+            <div class="col-lg-4">
+                <i class="fa-solid fa-bolt fa-4x fa-icon"></i>
+                <h3 class="feature-titles">Convenient Reservation</h3>
+                <p>Say goodbye to long waiting lines! Reservations made through our mobile app!</p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fa-solid fa-car-side fa-4x fa-icon"></i>
+                <h3 class="feature-titles">Seamless Experience</h3>
+                <p>Experience the ultimate convenience with our seamless car wash process.</p>
+            </div>
+            <div class="col-lg-4">
+                <i class="fa-solid fa-microchip fa-4x fa-icon"></i>
+                <h3 class="feature-titles">Car Cleaning Technology</h3>
+                <p>Super shine is at the forefront of car wash innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--GUESTS-->
+    <section id="guests">
+        <h1 class="guest-title">Meet our Brand Ambassadors!</h1>
+        <div id="carousel-slide" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="hanni.jpg" class="ambassadors">
+                        <h3 class="guest-name">Pham Hanni (하니)</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="minji.jpg" class="ambassadors">
+                        <h3 class="guest-name">Kim Minji (김민지)</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="danielle.jpg" class="ambassadors">
+                        <h3 class="guest-name">Danielle Marsh (다니엘)</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="haerin.jpg" class="ambassadors">
+                        <h3 class="guest-name">Kang Haerin (강해린)</h3>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="hyein.jpg" class="ambassadors">
+                        <h3 class="guest-name">Lee Hyein (이혜인)</h3>
+                    </div>
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-slide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-slide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--CTA-->
+    <section id="cta">
+        <h3 class="cta-title"><span class="cta-title-span">What's your ETA?</span> Find the Car Wash App of your dreams today!</h3>
+        <button class="download-button btn btn-outline-light btn-lg button-carousel" type="button"><i class="fa-brands fa-apple download-icon"></i>Download</button>
+        <button class="download-button btn btn-outline-light btn-lg button-carousel" type="button"><i class="fa-brands fa-google-play download-icon"></i>Download</button>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer">
+        <i class="fab fa-facebook-f fa-2x fa-footer"></i>
+        <i class="fab fa-x-twitter fa-2x fa-footer"></i>
+        <i class="fab fa-instagram fa-2x fa-footer"></i>.
+        <i class="fa-regular fa-envelope fa-2x fa-footer"></i>
+        <p>© Copyright 2023 Super Shine</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
